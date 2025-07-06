@@ -92,9 +92,9 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold mb-1">{t.contact.address}</h3>
                       <p className="text-muted-foreground">
-                        123 Seaside Boulevard<br />
-                        Costa Bella, 12345<br />
-                        Italy
+                        Gurukul<br />
+                        Ahmedabad, Gujarat<br />
+                        India
                       </p>
                     </div>
                   </div>
@@ -105,8 +105,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">{t.contact.phone}</h3>
-                      <p className="text-muted-foreground">+39 123 4567 890</p>
-                      <p className="text-muted-foreground">+39 098 7654 321 (Reservations)</p>
+                      <p className="text-muted-foreground">+91 9909948117</p>
+                      <p className="text-muted-foreground">+91 9997186532</p>
                     </div>
                   </div>
                   
@@ -116,37 +116,15 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">{t.contact.email}</h3>
-                      <p className="text-muted-foreground">info@maresereno.com</p>
-                      <p className="text-muted-foreground">reservations@maresereno.com</p>
+                      <p className="text-muted-foreground">info@sadhak.co</p>
+                      <p className="text-muted-foreground">contact@sadhak.co</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
-                      <Clock className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-1">{t.contact.receptionHours}</h3>
-                      <p className="text-muted-foreground">
-                        Monday - Sunday: 24 hours<br />
-                        {t.contact.checkInTime}<br />
-                        {t.contact.checkOutTime}
-                      </p>
-                    </div>
-                  </div>
+                  
                 </div>
                 
-                <div className="aspect-video rounded-xl overflow-hidden">
-                  <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.03606358136!2d14.165818971864153!3d40.85529294646443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b0a3c328d896b%3A0x309e11f99628150!2sGulf%20of%20Naples!5e0!3m2!1sen!2sus!4v1628613152777!5m2!1sen!2sus" 
-                    width="100%" 
-                    height="100%" 
-                    style={{ border: 0 }} 
-                    allowFullScreen 
-                    loading="lazy"
-                    title="Location Map"
-                  />
-                </div>
+                
               </div>
               
               {/* Contact Form */}
@@ -164,7 +142,7 @@ export default function Contact() {
                             name="name"
                             value={formData.name}
                             onChange={handleInputChange}
-                            placeholder="John Doe" 
+                            placeholder="Arjun Singh" 
                             required 
                           />
                         </div>
@@ -177,7 +155,7 @@ export default function Contact() {
                             type="email"
                             value={formData.email}
                             onChange={handleInputChange}
-                            placeholder="john@example.com" 
+                            placeholder="arjun.s@example.com" 
                             required 
                           />
                         </div>
@@ -191,7 +169,7 @@ export default function Contact() {
                             name="phone"
                             value={formData.phone}
                             onChange={handleInputChange}
-                            placeholder="+1 234 567 8900" 
+                            placeholder="+91 98765 43210" 
                           />
                         </div>
                         
@@ -216,7 +194,7 @@ export default function Contact() {
                           value={formData.message}
                           onChange={handleInputChange}
                           placeholder={t.contact.howCanWeHelp} 
-                          className="w-full min-h-[150px] p-3 rounded-md border border-input bg-background"
+                          className="w-full min-h-[100px] p-3 rounded-md border border-input bg-background"
                           required 
                         />
                       </div>

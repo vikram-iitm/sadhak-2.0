@@ -8,15 +8,15 @@ export const en = {
     bookNow: "Book Now"
   },
   hero: {
-    subtitle: "BEACHFRONT LUXURY ACCOMMODATION",
-    title: "Experience Seaside Tranquility",
-    description: "Discover our exclusive collection of luxury beachfront apartments and hotel rooms, offering unparalleled comfort and breathtaking sea views.",
+    subtitle: "Awaken Your Spirit in Timeless Kashi",
+    title: "Experience Yatra Like Never Before ",
+    description: "Join Sādhak for a sacred two-day journey of Sādhanā se Shiva this Shravan. Experience Kashi’s spiritual essence—Ganga Aarti, Kashi Vishwanath Darshan, dawn boat rides, and the eternal Manikarnika Ghat.",
     bookStay: "Book Your Stay",
     exploreApartments: "Explore Apartments",
     scrollDown: "Scroll Down"
   },
   footer: {
-    description: "Luxurious beachfront apartments and hotel rooms with stunning sea views, offering the perfect blend of comfort and elegance for your dream vacation.",
+    description: "Sādhak is dedicated to bringing timeless Sanatani wisdom to modern life through authentic spiritual journeys and learning experiences.",
     quickLinks: "Quick Links",
     contact: "Contact",
     newsletter: "Newsletter",
@@ -38,8 +38,8 @@ export const en = {
     bookingConfirmed: "Booking Confirmed!"
   },
   testimonials: {
-    title: "What Our Guests Say",
-    description: "Discover why our guests keep coming back to MareSereno for their seaside getaways."
+    title: "What Our Seekers Say",
+    description: "Discover how Sādhak has guided thousands on unforgettable journeys of faith, learning, and transformation."
   },
   notFound: {
     title: "Page Not Found",
@@ -48,10 +48,10 @@ export const en = {
   },
   home: {
     welcome: {
-      subtitle: "Welcome to MareSereno",
-      title: "Luxury Seaside Accommodations",
-      description1: "Nestled on the pristine Mediterranean coastline, MareSereno offers an exquisite collection of luxury apartments and hotel rooms. Our beachfront accommodations combine elegant design with modern comfort, creating the perfect setting for an unforgettable seaside getaway.",
-      description2: "Whether you're seeking a romantic escape, a family vacation, or a peaceful retreat, our diverse range of accommodations caters to every preference and need. Each space is thoughtfully designed to provide panoramic sea views and direct beach access.",
+      subtitle: "WELCOME TO Sādhak",
+      title: "A Noble Journey Back to Our Sanatani Roots",
+      description1: "Sādhak is a humble initiative by two IITians and Social Changemaker to reconnect today’s youth with the timeless spirit of Sanatan.",
+      description2: "Our guiding goal: “सर्वे भवन्तु सुखिनः, सर्वे सन्तु निरामयाः” (May all be happy, may all be free from illness.) From Oxford University halls to the ghats of Kashi and the campuses of IITs, we have shared Sanatan wisdom through tours, discourses, and retreats across continents. Over 5 lakh seekers have walked with us—experiencing authentic practices without the burden of profiteering. Every journey is crafted to be a once-in-a-lifetime experience—transparent, thoughtful, and true to its spiritual essence. Join us on this path of Sādhanā with trust in your heart.",
       learnMore: "Learn More"
     },
     booking: {
@@ -67,40 +67,70 @@ export const en = {
       viewAll: "View All Apartments"
     },
     amenities: {
-      subtitle: "Hotel Amenities",
-      title: "Experience The Best",
-      description: "Enjoy our premium facilities and services designed to make your stay exceptional.",
+      subtitle: "Where Time Stands Still, and the Spirit Awakens",
+      title: "Kashi—Anandavana, the Forest of Bliss",
+      description: "Kashi has been the heart of Sanatan Dharma for thousands of years. Walk its sacred ghats and feel the echoes of eternity.",
       features: {
         beachfront: {
-          title: "Beachfront Location",
-          description: "Direct access to pristine beaches with crystal clear waters."
+          title: "Kashi Vishwanath Darshan",
+          description: "Offer prayers at the Jyotirlinga where devotion has flowed unbroken for centuries."
         },
         pools: {
-          title: "Swimming Pools",
-          description: "Relax by our infinity pools with stunning sea views."
+          title: "Ganga Snan at Dawn",
+          description: "Bathe in the holy river as sunrise gilds the water—a ritual of renewal and faith."
         },
         restaurant: {
-          title: "Gourmet Restaurant",
-          description: "Enjoy exquisite local and international cuisine."
+          title: "Manikarnika Ghat",
+          description: "Witness the eternal flame and reflect on life’s deeper purpose."
         },
         wifi: {
-          title: "High-Speed Wi-Fi",
-          description: "Stay connected with complimentary high-speed internet."
+          title: "Temple Walk with Gurus",
+          description: "Explore hidden shrines and hear ancient stories with our learned guides."
         },
         bar: {
-          title: "Beach Bar & Café",
-          description: "Refreshing drinks and snacks served right on the beach."
+          title: "Sandhya Ganga Aarti",
+          description: "Feel your heart uplifted as 108 lamps light up the river to Vedic chants."
         },
         location: {
-          title: "Prime Location",
-          description: "Close to local attractions, shops, and restaurants."
+          title: "Kashi’s Living Heritage",
+          description: "Savor Banarasi delicacies, see master weavers at work, and feel the city’s soul."
         }
       }
     },
     cta: {
-      title: "Ready for Your Dream Vacation?",
-      description: "Book your stay today and experience the perfect blend of luxury, comfort, and stunning sea views.",
-      bookNow: "Book Now"
+      title: "Sādhak",
+      description: "Bringing timeless Sanatani wisdom to modern life through authentic spiritual journeys and learning experiences. Join us in rediscovering your roots.",
+      bookNow: "Join Us"
+    },
+    faqSection: {
+      title: "Frequently Asked Questions",
+      subtitle: "Find quick answers to commonly asked questions about Sādhak journeys.",
+      questions: [
+        {
+          question: "What does the tour package include?",
+          answer: "Your package covers comfortable 3–4 star accommodation, guided temple visits, a one-time daily meal, and transport to key spiritual sites within Kashi."
+        },
+        {
+          question: "Is this experience suitable for all age groups?",
+          answer: "Yes. Our journeys welcome seekers of all ages and backgrounds, including families, senior citizens, and international guests."
+        },
+        {
+          question: "How long is the Sādhanā Yatra?",
+          answer: "The trip is a 2-day immersive experience in Kashi, designed to blend spiritual discovery, cultural exploration, and personal reflection."
+        },
+        {
+          question: "Do I need to have prior knowledge of Hinduism?",
+          answer: "Not at all. Our expert guides and Gurus will share the history, meaning, and practices in simple language, so everyone feels included."
+        },
+        {
+          question: "What should I bring with me?",
+          answer: "We recommend modest, comfortable clothing, a water bottle, personal essentials, and an open heart ready for new experiences."
+        },
+        {
+          question: "How can I book my spot?",
+          answer: "Simply click Book Your Sacred Journey on our website to reserve your place. You’ll receive all details and a welcome kit after booking."
+        }
+      ]
     }
   },
   apartments: {
@@ -129,12 +159,13 @@ export const en = {
   },
   gallery: {
     title: "Photo Gallery",
-    subtitle: "Explore our seaside paradise through captivating imagery.",
+    subtitle: "Explore our spiritual journeys through captivating imagery.",
     filters: {
       all: "All",
-      exterior: "Exterior",
-      rooms: "Rooms",
-      amenities: "Amenities"
+      vrindavan: "Vrindavan",
+      kashi: "Kashi",
+      rameshwaram: "Rameshwaram",
+      events: "Events"
     }
   },
   booking: {
@@ -227,7 +258,7 @@ export const en = {
   },
   contact: {
     title: "Contact Us",
-    subtitle: "We're here to help make your stay unforgettable. Reach out with any questions or special requests.",
+    subtitle: "We're here to help make your travel unforgettable. Reach out with any questions or special requests.",
     getInTouch: "Get In Touch",
     address: "Address",
     phone: "Phone",
@@ -248,28 +279,28 @@ export const en = {
     faqSubtitle: "Find quick answers to commonly asked questions about our accommodations and services.",
     questions: {
       checkInOut: {
-        question: "What are your check-in and check-out times?",
-        answer: "Check-in is from 3:00 PM onwards, and check-out is until 11:00 AM. Early check-in or late check-out may be arranged based on availability."
+        question: "What does the tour package include?",
+        answer: "Your package covers comfortable 3–4 star accommodation, guided temple visits, a one-time daily meal, and transport to key spiritual sites within Kashi."
       },
       parking: {
-        question: "Is parking available at the property?",
-        answer: "Yes, we offer complimentary parking for all guests. Valet parking service is also available for an additional fee."
+        question: "Is this experience suitable for all age groups?",
+        answer: "Yes. Our journeys welcome seekers of all ages and backgrounds, including families, senior citizens, and international guests."
       },
       pets: {
-        question: "Are pets allowed in the apartments?",
-        answer: "We welcome pets in designated pet-friendly apartments. Please inform us in advance if you plan to bring a pet, as additional charges may apply."
+        question: "How long is the Sādhanā Yatra?",
+        answer: "The trip is a 2-day immersive experience in Kashi, designed to blend spiritual discovery, cultural exploration, and personal reflection."
       },
       breakfast: {
-        question: "Is breakfast included in the room rate?",
-        answer: "Breakfast is included in select room packages. You can check the inclusion during the booking process or add it to your reservation at any time."
+        question: "Do I need to have prior knowledge of Hinduism?",
+        answer: "Not at all. Our expert guides and Gurus will share the history, meaning, and practices in simple language, so everyone feels included."
       },
       transfers: {
-        question: "Do you offer airport transfers?",
-        answer: "Yes, we offer airport transfers for an additional fee. Please contact our concierge at least 48 hours before your arrival to arrange transportation."
+        question: "What should I bring with me?",
+        answer: "We recommend modest, comfortable clothing, a water bottle, personal essentials, and an open heart ready for new experiences."
       },
       amenities: {
-        question: "What amenities are available at the property?",
-        answer: "Our property features swimming pools, a spa, restaurants, a beach bar, fitness center, and direct beach access. All apartments include Wi-Fi, air conditioning, and modern appliances."
+        question: "How can I book my spot?",
+        answer: "Simply click Book Your Sacred Journey on our website to reserve your place. You’ll receive all details and a welcome kit after booking."
       }
     }
   },

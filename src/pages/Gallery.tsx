@@ -10,75 +10,459 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const galleryImages = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop",
-    alt: "Beachfront view",
-    category: "exterior"
+    src: "/gallery/vrindavan/IMG_4753.JPG",
+    alt: "Vrindavan Image 1",
+    category: "vrindavan"
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
-    alt: "Luxury suite interior",
-    category: "rooms"
+    src: "/gallery/vrindavan/IMG_4755.JPG",
+    alt: "Vrindavan Image 2",
+    category: "vrindavan"
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1584132905271-512c958d674a?w=800&h=600&fit=crop",
-    alt: "Swimming pool",
-    category: "amenities"
+    src: "/gallery/vrindavan/IMG_4756.JPG",
+    alt: "Vrindavan Image 3",
+    category: "vrindavan"
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=800&h=600&fit=crop",
-    alt: "Premium apartment",
-    category: "rooms"
+    src: "/gallery/vrindavan/IMG_4758.JPG",
+    alt: "Vrindavan Image 4",
+    category: "vrindavan"
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&h=600&fit=crop",
-    alt: "Beach sunset",
-    category: "exterior"
+    src: "/gallery/vrindavan/IMG_4760.JPG",
+    alt: "Vrindavan Image 5",
+    category: "vrindavan"
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=600&fit=crop",
-    alt: "Dining area",
-    category: "amenities"
+    src: "/gallery/vrindavan/IMG_4761.JPG",
+    alt: "Vrindavan Image 6",
+    category: "vrindavan"
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&h=600&fit=crop",
-    alt: "Bathroom",
-    category: "rooms"
+    src: "/gallery/vrindavan/IMG_4763.JPG",
+    alt: "Vrindavan Image 7",
+    category: "vrindavan"
   },
   {
     id: 8,
-    src: "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&h=600&fit=crop",
-    alt: "Beach pathway",
-    category: "exterior"
+    src: "/gallery/vrindavan/IMG_4766.JPG",
+    alt: "Vrindavan Image 8",
+    category: "vrindavan"
   },
   {
     id: 9,
-    src: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&h=600&fit=crop",
-    alt: "Restaurant",
-    category: "amenities"
+    src: "/gallery/vrindavan/IMG_4767.JPG",
+    alt: "Vrindavan Image 9",
+    category: "vrindavan"
   },
   {
     id: 10,
-    src: "https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?w=800&h=600&fit=crop",
-    alt: "Bedroom",
-    category: "rooms"
+    src: "/gallery/vrindavan/IMG_4769.JPG",
+    alt: "Vrindavan Image 10",
+    category: "vrindavan"
   },
   {
     id: 11,
-    src: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop",
-    alt: "Beach umbrellas",
-    category: "exterior"
+    src: "/gallery/vrindavan/IMG_4771.JPG",
+    alt: "Vrindavan Image 11",
+    category: "vrindavan"
   },
   {
     id: 12,
-    src: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&h=600&fit=crop",
-    alt: "Spa",
-    category: "amenities"
+    src: "/gallery/kashi/IMG_4685.JPG",
+    alt: "Kashi Image 1",
+    category: "kashi"
+  },
+  {
+    id: 13,
+    src: "/gallery/kashi/IMG_4686.JPG",
+    alt: "Kashi Image 2",
+    category: "kashi"
+  },
+  {
+    id: 14,
+    src: "/gallery/kashi/IMG_4687.JPG",
+    alt: "Kashi Image 3",
+    category: "kashi"
+  },
+  {
+    id: 15,
+    src: "/gallery/kashi/IMG_4688.JPG",
+    alt: "Kashi Image 4",
+    category: "kashi"
+  },
+  {
+    id: 16,
+    src: "/gallery/kashi/IMG_4689.JPG",
+    alt: "Kashi Image 5",
+    category: "kashi"
+  },
+  {
+    id: 17,
+    src: "/gallery/kashi/IMG_4690.JPG",
+    alt: "Kashi Image 6",
+    category: "kashi"
+  },
+  {
+    id: 18,
+    src: "/gallery/kashi/IMG_4691.JPG",
+    alt: "Kashi Image 7",
+    category: "kashi"
+  },
+  {
+    id: 19,
+    src: "/gallery/kashi/IMG_4692.JPG",
+    alt: "Kashi Image 8",
+    category: "kashi"
+  },
+  {
+    id: 20,
+    src: "/gallery/kashi/IMG_4693.JPG",
+    alt: "Kashi Image 9",
+    category: "kashi"
+  },
+  {
+    id: 21,
+    src: "/gallery/kashi/IMG_4696.JPG",
+    alt: "Kashi Image 10",
+    category: "kashi"
+  },
+  {
+    id: 22,
+    src: "/gallery/kashi/IMG_4697.JPG",
+    alt: "Kashi Image 11",
+    category: "kashi"
+  },
+  {
+    id: 23,
+    src: "/gallery/kashi/IMG_4698.JPG",
+    alt: "Kashi Image 12",
+    category: "kashi"
+  },
+  {
+    id: 24,
+    src: "/gallery/kashi/IMG_4699.JPG",
+    alt: "Kashi Image 13",
+    category: "kashi"
+  },
+  {
+    id: 25,
+    src: "/gallery/kashi/IMG_4700.JPG",
+    alt: "Kashi Image 14",
+    category: "kashi"
+  },
+  {
+    id: 26,
+    src: "/gallery/kashi/IMG_4701.JPG",
+    alt: "Kashi Image 15",
+    category: "kashi"
+  },
+  {
+    id: 27,
+    src: "/gallery/kashi/IMG_4702.JPG",
+    alt: "Kashi Image 16",
+    category: "kashi"
+  },
+  {
+    id: 28,
+    src: "/gallery/kashi/IMG_4703.JPG",
+    alt: "Kashi Image 17",
+    category: "kashi"
+  },
+  {
+    id: 29,
+    src: "/gallery/rameshwaram/IMG_4475.WEBP",
+    alt: "Rameshwaram Image 1",
+    category: "rameshwaram"
+  },
+  {
+    id: 30,
+    src: "/gallery/rameshwaram/IMG_4476.WEBP",
+    alt: "Rameshwaram Image 2",
+    category: "rameshwaram"
+  },
+  {
+    id: 31,
+    src: "/gallery/rameshwaram/IMG_4478.WEBP",
+    alt: "Rameshwaram Image 3",
+    category: "rameshwaram"
+  },
+  {
+    id: 32,
+    src: "/gallery/rameshwaram/IMG_4704.WEBP",
+    alt: "Rameshwaram Image 4",
+    category: "rameshwaram"
+  },
+  {
+    id: 33,
+    src: "/gallery/rameshwaram/IMG_4705.WEBP",
+    alt: "Rameshwaram Image 5",
+    category: "rameshwaram"
+  },
+  {
+    id: 34,
+    src: "/gallery/rameshwaram/IMG_4706.JPG",
+    alt: "Rameshwaram Image 6",
+    category: "rameshwaram"
+  },
+  {
+    id: 35,
+    src: "/gallery/rameshwaram/IMG_4707.WEBP",
+    alt: "Rameshwaram Image 7",
+    category: "rameshwaram"
+  },
+  {
+    id: 36,
+    src: "/gallery/rameshwaram/IMG_4709.WEBP",
+    alt: "Rameshwaram Image 8",
+    category: "rameshwaram"
+  },
+  {
+    id: 37,
+    src: "/gallery/rameshwaram/IMG_4710.WEBP",
+    alt: "Rameshwaram Image 9",
+    category: "rameshwaram"
+  },
+  {
+    id: 38,
+    src: "/gallery/rameshwaram/IMG_4711.WEBP",
+    alt: "Rameshwaram Image 10",
+    category: "rameshwaram"
+  },
+  {
+    id: 39,
+    src: "/gallery/rameshwaram/IMG_4712.WEBP",
+    alt: "Rameshwaram Image 11",
+    category: "rameshwaram"
+  },
+  {
+    id: 40,
+    src: "/gallery/rameshwaram/IMG_4714.WEBP",
+    alt: "Rameshwaram Image 12",
+    category: "rameshwaram"
+  },
+  {
+    id: 41,
+    src: "/gallery/rameshwaram/IMG_4716.WEBP",
+    alt: "Rameshwaram Image 13",
+    category: "rameshwaram"
+  },
+  {
+    id: 42,
+    src: "/gallery/rameshwaram/IMG_4717.WEBP",
+    alt: "Rameshwaram Image 14",
+    category: "rameshwaram"
+  },
+  {
+    id: 43,
+    src: "/gallery/rameshwaram/IMG_4718.WEBP",
+    alt: "Rameshwaram Image 15",
+    category: "rameshwaram"
+  },
+  {
+    id: 44,
+    src: "/gallery/rameshwaram/IMG_4719.WEBP",
+    alt: "Rameshwaram Image 16",
+    category: "rameshwaram"
+  },
+  {
+    id: 45,
+    src: "/gallery/rameshwaram/IMG_4720.WEBP",
+    alt: "Rameshwaram Image 17",
+    category: "rameshwaram"
+  },
+  {
+    id: 46,
+    src: "/gallery/rameshwaram/IMG_4721.WEBP",
+    alt: "Rameshwaram Image 18",
+    category: "rameshwaram"
+  },
+  {
+    id: 47,
+    src: "/gallery/rameshwaram/IMG_4722.WEBP",
+    alt: "Rameshwaram Image 19",
+    category: "rameshwaram"
+  },
+  {
+    id: 48,
+    src: "/gallery/rameshwaram/IMG_4723.WEBP",
+    alt: "Rameshwaram Image 20",
+    category: "rameshwaram"
+  },
+  {
+    id: 49,
+    src: "/gallery/rameshwaram/IMG_4724.WEBP",
+    alt: "Rameshwaram Image 21",
+    category: "rameshwaram"
+  },
+  {
+    id: 50,
+    src: "/gallery/rameshwaram/IMG_4725.WEBP",
+    alt: "Rameshwaram Image 22",
+    category: "rameshwaram"
+  },
+  {
+    id: 51,
+    src: "/gallery/rameshwaram/IMG_4726.WEBP",
+    alt: "Rameshwaram Image 23",
+    category: "rameshwaram"
+  },
+  {
+    id: 52,
+    src: "/gallery/rameshwaram/IMG_4727.WEBP",
+    alt: "Rameshwaram Image 24",
+    category: "rameshwaram"
+  },
+  {
+    id: 53,
+    src: "/gallery/rameshwaram/IMG_4728.WEBP",
+    alt: "Rameshwaram Image 25",
+    category: "rameshwaram"
+  },
+  {
+    id: 54,
+    src: "/gallery/rameshwaram/IMG_4729.WEBP",
+    alt: "Rameshwaram Image 26",
+    category: "rameshwaram"
+  },
+  {
+    id: 55,
+    src: "/gallery/rameshwaram/IMG_4730.WEBP",
+    alt: "Rameshwaram Image 27",
+    category: "rameshwaram"
+  },
+  {
+    id: 56,
+    src: "/gallery/rameshwaram/IMG_4731.WEBP",
+    alt: "Rameshwaram Image 28",
+    category: "rameshwaram"
+  },
+  {
+    id: 57,
+    src: "/gallery/rameshwaram/IMG_4732.WEBP",
+    alt: "Rameshwaram Image 29",
+    category: "rameshwaram"
+  },
+  {
+    id: 58,
+    src: "/gallery/rameshwaram/IMG_4733.WEBP",
+    alt: "Rameshwaram Image 30",
+    category: "rameshwaram"
+  },
+  {
+    id: 59,
+    src: "/gallery/events/1a96767e-67b4-4d35-a911-09d21da18b5f.jpg",
+    alt: "Sadhak Event 1",
+    category: "events"
+  },
+  {
+    id: 60,
+    src: "/gallery/events/203e28f1-1405-44d9-b3c4-6c38b3d9b3ce.jpg",
+    alt: "Sadhak Event 2",
+    category: "events"
+  },
+  {
+    id: 61,
+    src: "/gallery/events/35a6cd57-970c-414e-b02c-78bde8968e11.jpg",
+    alt: "Sadhak Event 3",
+    category: "events"
+  },
+  {
+    id: 62,
+    src: "/gallery/events/3a0f70b9-941c-4d05-b957-4767e4a16a26.jpg",
+    alt: "Sadhak Event 4",
+    category: "events"
+  },
+  {
+    id: 63,
+    src: "/gallery/events/3f832f36-9aa1-4faf-aee2-411de4cdb096.jpg",
+    alt: "Sadhak Event 5",
+    category: "events"
+  },
+  {
+    id: 64,
+    src: "/gallery/events/40d1219b-804a-4c87-919c-8abc001e5d7d.jpg",
+    alt: "Sadhak Event 6",
+    category: "events"
+  },
+  {
+    id: 65,
+    src: "/gallery/events/6a82654b-a90e-4dce-8d4f-e02e6a9bcc07.jpg",
+    alt: "Sadhak Event 7",
+    category: "events"
+  },
+  {
+    id: 66,
+    src: "/gallery/events/77585a55-9e25-4b24-bb02-4b614ba0532e.jpg",
+    alt: "Sadhak Event 8",
+    category: "events"
+  },
+  {
+    id: 67,
+    src: "/gallery/events/7c18121a-5c86-4160-8840-4fa3bcd6cbeb.jpg",
+    alt: "Sadhak Event 9",
+    category: "events"
+  },
+  {
+    id: 68,
+    src: "/gallery/events/a3617fc7-2f85-43db-abb5-12df25fe74b5.jpg",
+    alt: "Sadhak Event 10",
+    category: "events"
+  },
+  {
+    id: 69,
+    src: "/gallery/events/bc15f70f-872b-41a2-9206-8b44cb8cc179.jpg",
+    alt: "Sadhak Event 11",
+    category: "events"
+  },
+  {
+    id: 70,
+    src: "/gallery/events/ca788139-479e-431e-813e-8069962788b6.jpg",
+    alt: "Sadhak Event 12",
+    category: "events"
+  },
+  {
+    id: 71,
+    src: "/gallery/events/d0306dac-a553-4f78-a746-919cf0e366e1.jpg",
+    alt: "Sadhak Event 13",
+    category: "events"
+  },
+  {
+    id: 72,
+    src: "/gallery/events/e0f74814-b938-4def-89cc-4ba75a738f33.jpg",
+    alt: "Sadhak Event 14",
+    category: "events"
+  },
+  {
+    id: 73,
+    src: "/gallery/events/e3fe8c11-033b-4c63-b3fb-b2c940a1a927.jpg",
+    alt: "Sadhak Event 15",
+    category: "events"
+  },
+  {
+    id: 74,
+    src: "/gallery/events/ecae11cd-0a42-4e57-b86c-f93d039526a8.jpg",
+    alt: "Sadhak Event 16",
+    category: "events"
+  },
+  {
+    id: 75,
+    src: "/gallery/events/f115072e-f9f4-4a34-9e13-1b1cde2d4949.jpg",
+    alt: "Sadhak Event 17",
+    category: "events"
+  },
+  {
+    id: 76,
+    src: "/gallery/events/f4db3fa9-6ce7-4b1c-a033-885ebaf9bc3c.jpg",
+    alt: "Sadhak Event 18",
+    category: "events"
   },
 ];
 
@@ -167,7 +551,7 @@ export default function Gallery() {
         <section className="py-8">
           <div className="container">
             <div className="flex flex-wrap justify-center gap-2 mb-8 animate-fade-in">
-              {["all", "exterior", "rooms", "amenities"].map((category) => (
+              {["all", "rameshwaram", "vrindavan", "kashi", "events"].map((category) => (
                 <button
                   key={category}
                   onClick={() => filterGallery(category)}
@@ -180,11 +564,13 @@ export default function Gallery() {
                 >
                   {category === "all" 
                     ? t.gallery.filters.all 
-                    : category === "exterior" 
-                      ? t.gallery.filters.exterior 
-                      : category === "rooms" 
-                        ? t.gallery.filters.rooms 
-                        : t.gallery.filters.amenities}
+                    : category === "vrindavan" 
+                      ? t.gallery.filters.vrindavan 
+                      : category === "kashi" 
+                        ? t.gallery.filters.kashi 
+                        : category === "rameshwaram" 
+                          ? t.gallery.filters.rameshwaram 
+                          : t.gallery.filters.events}
                 </button>
               ))}
             </div>

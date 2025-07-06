@@ -7,65 +7,65 @@
 
 @layer base {
   :root {
-    --background: 210 50% 98%;
-    --foreground: 210 40% 10%;
+    --background: 0 0% 100%; /* White */
+    --foreground: 30 40% 10%; /* Dark earthy tone */
 
     --card: 0 0% 100%;
-    --card-foreground: 210 40% 10%;
+    --card-foreground: 30 40% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 40% 10%;
+    --popover-foreground: 30 40% 10%;
 
-    --primary: 210 100% 40%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 30 100% 60%; /* Deep Saffron */
+    --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 210 40% 10%;
+    --secondary: 40 25% 67%; /* Khaki */
+    --secondary-foreground: 30 40% 10%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 210 30% 40%;
+    --muted: 40 10% 90%; /* Lighter khaki/beige */
+    --muted-foreground: 30 20% 30%;
 
-    --accent: 210 40% 96%;
-    --accent-foreground: 210 40% 10%;
+    --accent: 40 25% 67%; /* Khaki */
+    --accent-foreground: 30 40% 10%;
 
     --destructive: 0 85% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 20% 90%;
-    --input: 210 20% 90%;
-    --ring: 210 100% 40%;
+    --border: 40 15% 80%; /* Light khaki/beige */
+    --input: 40 15% 80%;
+    --ring: 30 100% 60%; /* Deep Saffron */
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 210 30% 12%;
-    --foreground: 210 20% 98%;
+    --background: 30 20% 15%; /* Darker earthy tone */
+    --foreground: 40 20% 90%; /* Lighter text */
 
-    --card: 210 30% 15%;
-    --card-foreground: 210 20% 98%;
+    --card: 30 20% 20%;
+    --card-foreground: 40 20% 90%;
 
-    --popover: 210 30% 15%;
-    --popover-foreground: 210 20% 98%;
+    --popover: 30 20% 20%;
+    --popover-foreground: 40 20% 90%;
 
-    --primary: 210 100% 50%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 30 100% 70%; /* Lighter saffron for dark mode */
+    --primary-foreground: 30 20% 10%;
 
-    --secondary: 210 30% 20%;
-    --secondary-foreground: 210 20% 98%;
+    --secondary: 40 25% 50%; /* Darker khaki */
+    --secondary-foreground: 40 20% 90%;
 
-    --muted: 210 30% 20%;
-    --muted-foreground: 210 20% 60%;
+    --muted: 30 15% 25%;
+    --muted-foreground: 40 15% 70%;
 
-    --accent: 210 30% 20%;
-    --accent-foreground: 210 20% 98%;
+    --accent: 40 25% 50%;
+    --accent-foreground: 40 20% 90%;
 
     --destructive: 0 70% 50%;
-    --destructive-foreground: 210 20% 98%;
+    --destructive-foreground: 40 20% 90%;
 
-    --border: 210 30% 25%;
-    --input: 210 30% 25%;
-    --ring: 210 100% 60%;
+    --border: 30 15% 30%;
+    --input: 30 15% 30%;
+    --ring: 30 100% 70%;
   }
 }
 

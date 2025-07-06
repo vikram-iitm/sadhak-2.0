@@ -15,27 +15,27 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Sophia Martinez",
-    location: "New York, USA",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=faces",
-    content: "My family and I had the most wonderful stay at MareSereno. The apartment was immaculate, with breathtaking sea views. The staff went above and beyond to make our vacation special.",
+    name: "Pranav Singh",
+    location: "Gurugram, India / Mumbai, India",
+    avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cfd293ae?w=150&h=150&fit=crop&crop=faces",
+    content: `When I joined the Vrindavan Sādhanā retreat, I thought it would be just another spiritual trip. But Sādhak made it feel like coming home to something I had forgotten. From the early morning kirtans to quiet reflections by the Yamuna, every moment felt pure and honest. I left with tears of gratitude and a sense of belonging I’d never known before.`,
     rating: 5
   },
   {
     id: 2,
-    name: "Marco Rossi",
-    location: "Rome, Italy",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=faces",
-    content: "Absolutely perfect location, steps away from the beach. The apartment had everything we needed and more. The modern amenities combined with the traditional coastal charm created a truly magical experience.",
+    name: "Abhiraj",
+    location: "London, UK",
+    avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cfd293ae?w=150&h=150&fit=crop&crop=faces",
+    content: `Attending Sādhak’s lecture at Oxford was unlike any talk I’ve heard. The speakers didn’t just share knowledge—shared their hearts. I remember sitting there, realising how disconnected I’d become from my own culture. That day inspired me to start reading the Gita again and bring those values back into my life.`,
     rating: 5
   },
   {
     id: 3,
-    name: "Emma Johnson",
-    location: "London, UK",
-    avatar: "https://images.unsplash.com/photo-1569913486515-b74bf7751574?w=150&h=150&fit=crop&crop=faces",
-    content: "We spent a wonderful week at this beachfront paradise. The sunrise views from our terrace were worth the trip alone. Exceptionally clean and beautifully designed spaces.",
-    rating: 4
+    name: "Neeraj Rani",
+    location: "Kashipur, India / Chennai, India",
+    avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cfd293ae?w=150&h=150&fit=crop&crop=faces",
+    content: `The Rameshwaram tour with Sādhak felt like walking through centuries of devotion, guided by people who truly care. Every temple visit was explained with such respect and warmth. It wasn’t about ticking off places—it was about feeling the energy of each sacred spot. I came back renewed, with memories I will carry forever.`,
+    rating: 5
   },
 ];
 

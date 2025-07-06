@@ -1,50 +1,27 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import BookingForm from "@/components/BookingForm";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import ApartmentCard, { ApartmentProps } from "@/components/ApartmentCard";
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Wifi, Utensils, Waves, LifeBuoy, MapPin, Coffee } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
-// Sample apartments data
-const featuredApartments: ApartmentProps[] = [
-  {
-    id: "1",
-    name: "Deluxe Sea View Suite",
-    description: "Luxurious suite with panoramic sea views, modern amenities, and a private balcony.",
-    price: 180,
-    capacity: 2,
-    size: 45,
-    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
-    location: "Beachfront",
-    features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
-  },
-  {
-    id: "2",
-    name: "Premium Family Apartment",
-    description: "Spacious apartment ideal for families, with full kitchen and stunning coastal views.",
-    price: 250,
-    capacity: 4,
-    size: 75,
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
-    location: "Second row",
-    features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Washing Machine"]
-  },
-  {
-    id: "3",
-    name: "Executive Beach Studio",
-    description: "Elegant studio with direct beach access, modern design, and premium finishes.",
-    price: 150,
-    capacity: 2,
-    size: 35,
-    image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&h=600&fit=crop",
-    location: "Beachfront",
-    features: ["Wi-Fi", "Kitchenette", "Bathroom", "Air Conditioning", "TV"]
-  }
+const kashiImages = [
+  "/gallery/kashi/IMG_4685.JPG",
+  "/gallery/kashi/IMG_4686.JPG",
+  "/gallery/kashi/IMG_4687.JPG",
+  "/gallery/kashi/IMG_4688.JPG",
+  "/gallery/kashi/IMG_4691.JPG",
+  "/gallery/kashi/IMG_4692.JPG",
+  "/gallery/kashi/IMG_4693.JPG",
+  "/gallery/kashi/IMG_4698.JPG",
+  "/gallery/kashi/IMG_4699.JPG",
 ];
 
 export default function Index() {
@@ -115,40 +92,39 @@ export default function Index() {
                   {t.home.welcome.description2}
                 </p>
                 <Button asChild className="btn-primary">
-                  <Link to="/about">
+                  <Link to="/contact">
                     {t.home.welcome.learnMore} <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </div>
               
-              <div className="relative animate-fade-in [animation-delay:300ms]">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&h=600&fit=crop"
-                    alt="Seaside view" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute -bottom-6 -left-6 w-2/3 rounded-2xl overflow-hidden shadow-xl">
-                  <img 
-                    src="https://images.unsplash.com/photo-1545579133-99bb5ab189bd?w=400&h=300&fit=crop"
-                    alt="Luxury apartment interior" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute -top-6 -right-6 w-1/2 rounded-2xl overflow-hidden shadow-xl">
-                  <img 
-                    src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=400&h=300&fit=crop"
-                    alt="Pool view" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+              <div className="relative animate-fade-in [animation-delay:300ms] h-full overflow-hidden rounded-2xl">
+                <Carousel 
+                  className="w-full h-full aspect-[4/3]"
+                  plugins={[
+                    Autoplay({
+                      delay: 2000,
+                      stopOnInteraction: false,
+                    }),
+                  ]}
+                >
+                  <CarouselContent className="h-full">
+                    {kashiImages.map((src, index) => (
+                      <CarouselItem key={index} className="h-full">
+                        <div className="w-full h-full overflow-hidden rounded-2xl flex items-center justify-center">
+                          <img src={src} alt={`Kashi Image ${index + 1}`} className="w-full h-full object-cover" />
+                        </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                </Carousel>
               </div>
             </div>
           </div>
         </section>
         
-        {/* Booking Form Section */}
+        {/* Booking Form Section - Temporarily removed */}
+        {/*
         <section className="relative py-20 bg-gradient-to-r from-sea-light to-white dark:from-sea-dark dark:to-background overflow-hidden">
           <div className="container relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -178,48 +154,14 @@ export default function Index() {
             </div>
           </div>
           
-          {/* Decorative elements */}
           <div className="absolute top-0 right-0 w-1/3 h-full opacity-10">
             <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-primary/50 blur-3xl" />
             <div className="absolute bottom-10 right-40 w-48 h-48 rounded-full bg-sea-light blur-3xl" />
           </div>
         </section>
+        */}
         
-        {/* Featured Apartments */}
-        <section className="section">
-          <div className="container">
-            <div className="text-center max-w-3xl mx-auto mb-12 animate-fade-in">
-              <span className="text-sm text-primary font-medium uppercase tracking-wider">
-                {t.home.featuredApartments.subtitle}
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
-                {t.home.featuredApartments.title}
-              </h2>
-              <p className="text-muted-foreground">
-                {t.home.featuredApartments.description}
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {featuredApartments.map((apartment, index) => (
-                <div key={apartment.id} className="animate-fade-in" style={{ animationDelay: `${(index + 1) * 100}ms` }}>
-                  <ApartmentCard apartment={apartment} />
-                </div>
-              ))}
-            </div>
-            
-            <div className="text-center mt-12">
-              <Button asChild className="btn-primary">
-                <Link to="/apartments">
-                  {t.home.featuredApartments.viewAll} <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </section>
         
-        {/* Testimonials Section */}
-        <TestimonialsSection />
         
         {/* Features Section */}
         <section className="section bg-card">
@@ -265,7 +207,7 @@ export default function Index() {
                 {t.home.cta.description}
               </p>
               <Button asChild size="lg" className="btn-primary">
-                <Link to="/booking">{t.home.cta.bookNow}</Link>
+                <Link to="/contact">{t.home.cta.bookNow}</Link>
               </Button>
             </div>
           </div>
@@ -289,6 +231,42 @@ export default function Index() {
             </svg>
           </div>
         </section>
+
+        {/* Testimonials Section */}
+        <TestimonialsSection />
+
+        {/* FAQ Section - Temporarily removed */}
+        {/*
+        <section className="section bg-muted">
+          <div className="container">
+            <div className="max-w-3xl mx-auto text-center mb-12 animate-fade-in">
+              <h2 className="text-3xl font-bold mb-4">{t.home.faqSection.title}</h2>
+              <p className="text-muted-foreground">
+                {t.home.faqSection.subtitle}
+              </p>
+            </div>
+            
+            <div className="max-w-3xl mx-auto">
+              <Accordion type="single" collapsible className="w-full space-y-4">
+                {t.home.faqSection.questions.map((faq, index) => (
+                  <AccordionItem 
+                    value={`item-${index}`} 
+                    key={index} 
+                    className="glass-card p-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:translate-y-[-2px]"
+                  >
+                    <AccordionTrigger className="text-lg font-semibold text-left hover:no-underline data-[state=open]:text-primary">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground text-base leading-relaxed pt-2">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </div>
+        </section>
+        */}
       </main>
       
       <Footer />

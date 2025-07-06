@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -9,6 +9,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 export default function HeroSection() {
   const { t } = useLanguage();
   const [scrollY, setScrollY] = useState(0);
+  const videoRef = useRef<HTMLVideoElement>(null);
   
   useEffect(() => {
     const handleScroll = () => {
@@ -19,21 +20,34 @@ export default function HeroSection() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   
+  const handleVideoEnded = () => {
+    if (videoRef.current) {
+      videoRef.current.currentTime = 0;
+      videoRef.current.play();
+    }
+  };
+  
   // Calculate parallax effect
   const backgroundY = scrollY * 0.5;
   const contentY = scrollY * 0.2;
   
   return (
     <section className="relative h-screen overflow-hidden">
-      {/* Background image with parallax */}
+      {/* Background video with parallax */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1615571022219-eb45cf7faa9d?q=80&w=1920&auto=format&fit=crop')",
-          transform: `translateY(${backgroundY}px)`,
-          backgroundPosition: `center ${50 + scrollY * 0.05}%`
-        }}
-      />
+        className="absolute inset-0"
+      >
+        <video
+          ref={videoRef}
+          className="absolute inset-0 w-full h-full object-cover"
+          src="https://res.cloudinary.com/dgbp1qmiw/video/upload/v1751752055/13263912_3840_2160_60fps_online-video-cutter.com_1_yqfcnd.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          onEnded={handleVideoEnded}
+        />
+      </div>
       
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/60" />
@@ -55,10 +69,7 @@ export default function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg" variant="heroSolid" className="min-w-[200px] rounded-full transform transition-all duration-300 hover:translate-y-[-2px]">
-              <Link to="/booking">{t.hero.bookStay}</Link>
-            </Button>
-            <Button asChild variant="hero" size="lg" className="min-w-[200px] rounded-full transform transition-all duration-300 hover:translate-y-[-2px]">
-              <Link to="/apartments">{t.hero.exploreApartments}</Link>
+              <Link to="/contact">Start Your Sādhanā Yatra</Link>
             </Button>
           </div>
         </div>
