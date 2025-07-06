@@ -38,7 +38,7 @@ export default function Footer() {
               {[
                 { name: t.nav.home, path: "/" },
                 { name: t.nav.apartments, path: "/apartments" },
-                { name: t.nav.amenities, path: "/amenities" },
+                // { name: t.nav.amenities, path: "/amenities" },
                 { name: t.nav.gallery, path: "/gallery" },
                 { name: t.nav.contact, path: "/contact" },
                 { name: t.nav.bookNow, path: "/booking" },
