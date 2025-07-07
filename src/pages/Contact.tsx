@@ -18,8 +18,6 @@ export default function Contact() {
     message: ""
   });
   
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  
   useEffect(() => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
@@ -28,27 +26,6 @@ export default function Contact() {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-  };
-  
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // In a real app, this would send the form data to a server
-    console.log("Form submitted:", formData);
-    
-    setIsSubmitted(true);
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: ""
-      });
-    }, 3000);
   };
   
   return (
@@ -132,7 +109,7 @@ export default function Contact() {
                 <h2 className="text-2xl font-bold mb-6">{t.contact.sendMessage}</h2>
                 
                 <div className="glass-card p-6">
-                  <form name="contact" method="POST" data-netlify="true" className="space-y-6">
+                  <form name="contact" method="POST" data-netlify="true" action="/success" className="space-y-6">
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
