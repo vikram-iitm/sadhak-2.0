@@ -132,89 +132,68 @@ export default function Contact() {
                 <h2 className="text-2xl font-bold mb-6">{t.contact.sendMessage}</h2>
                 
                 <div className="glass-card p-6">
-                  {!isSubmitted ? (
-                    <form onSubmit={handleSubmit} className="space-y-6">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div className="space-y-2">
-                          <Label htmlFor="name">{t.contact.fullName}</Label>
-                          <Input 
-                            id="name" 
-                            name="name"
-                            value={formData.name}
-                            onChange={handleInputChange}
-                            placeholder="Arjun Singh" 
-                            required 
-                          />
-                        </div>
-                        
-                        <div className="space-y-2">
-                          <Label htmlFor="email">{t.contact.email}</Label>
-                          <Input 
-                            id="email" 
-                            name="email"
-                            type="email"
-                            value={formData.email}
-                            onChange={handleInputChange}
-                            placeholder="arjun.s@example.com" 
-                            required 
-                          />
-                        </div>
-                      </div>
-                      
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div className="space-y-2">
-                          <Label htmlFor="phone">{t.contact.phoneNumber}</Label>
-                          <Input 
-                            id="phone" 
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleInputChange}
-                            placeholder="+91 98765 43210" 
-                          />
-                        </div>
-                        
-                        <div className="space-y-2">
-                          <Label htmlFor="subject">{t.contact.subject}</Label>
-                          <Input 
-                            id="subject" 
-                            name="subject"
-                            value={formData.subject}
-                            onChange={handleInputChange}
-                            placeholder="Reservation Inquiry" 
-                            required 
-                          />
-                        </div>
-                      </div>
-                      
+                  <form name="contact" method="POST" data-netlify="true" className="space-y-6">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="message">{t.contact.message}</Label>
-                        <textarea 
-                          id="message" 
-                          name="message"
-                          value={formData.message}
-                          onChange={handleInputChange}
-                          placeholder={t.contact.howCanWeHelp} 
-                          className="w-full min-h-[100px] p-3 rounded-md border border-input bg-background"
+                        <Label htmlFor="name">{t.contact.fullName}</Label>
+                        <Input 
+                          id="name" 
+                          name="name"
+                          placeholder="Arjun Singh" 
                           required 
                         />
                       </div>
                       
-                      <Button type="submit" className="w-full btn-primary">
-                        <Send className="mr-2 h-4 w-4" />
-                        {t.contact.send}
-                      </Button>
-                    </form>
-                  ) : (
-                    <div className="text-center py-12">
-                      <div className="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <Check className="h-8 w-8 text-green-600 dark:text-green-400" />
+                      <div className="space-y-2">
+                        <Label htmlFor="email">{t.contact.email}</Label>
+                        <Input 
+                          id="email" 
+                          name="email"
+                          type="email"
+                          placeholder="arjun.s@example.com" 
+                          required 
+                        />
                       </div>
-                      <h3 className="text-xl font-semibold mb-2">{t.contact.messageSent}</h3>
-                      <p className="text-muted-foreground mb-6">
-                        {t.contact.thankYou}
-                      </p>
                     </div>
-                  )}
+                    
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <Label htmlFor="phone">{t.contact.phoneNumber}</Label>
+                        <Input 
+                          id="phone" 
+                          name="phone"
+                          placeholder="+91 98765 43210" 
+                        />
+                      </div>
+                      
+                      <div className="space-y-2">
+                        <Label htmlFor="subject">{t.contact.subject}</Label>
+                        <Input 
+                          id="subject" 
+                          name="subject"
+                          placeholder="Reservation Inquiry" 
+                          required 
+                        />
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <Label htmlFor="message">{t.contact.message}</Label>
+                      <textarea 
+                        id="message" 
+                        name="message"
+                        placeholder={t.contact.howCanWeHelp} 
+                        className="w-full min-h-[100px] p-3 rounded-md border border-input bg-background"
+                        required 
+                      />
+                    </div>
+                    
+                    <Button type="submit" className="w-full btn-primary">
+                      <Send className="mr-2 h-4 w-4" />
+                      {t.contact.send}
+                    </Button>
+                  </form>
                 </div>
               </div>
             </div>
